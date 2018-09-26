@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MenuController } from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
 import { BadgesPage } from '../pages/badges/badges';
+import { FormPage } from '../pages/form/form';
 @Component({
   templateUrl: 'app.html'
 })
@@ -21,7 +22,8 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Badges', component: BadgesPage }
+      { title: 'Badges', component: BadgesPage },
+      { title: 'Form', component: FormPage }
     ];
   }
   openPage(page) {

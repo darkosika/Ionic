@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+      <ion-title>Form</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+
+        <ion-item>
+          <ion-label stacked>İsim:</ion-label>
+          <ion-input [(ngModel)]='username'  type="text"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label stacked>Soyisim:</ion-label>
+          <ion-input [(ngModel)]='password' type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>Konu:</ion-label>
+            <ion-input [(ngModel)]='konu' type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label stacked>Şikayet:</ion-label>
+            <ion-input [(ngModel)]='sikayet' type="text"></ion-input>
+          </ion-item>
+        <button ion-button color="secondary"block (click)="Login()">Şikayet</button>
+      </ion-list>
+  </ion-content>

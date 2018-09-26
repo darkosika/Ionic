@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, Checkbox } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { Platform, ActionSheetController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
