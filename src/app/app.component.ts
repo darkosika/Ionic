@@ -6,6 +6,7 @@ import { MenuController } from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
 import { BadgesPage } from '../pages/badges/badges';
 import { FormPage } from '../pages/form/form';
+import { ListPage } from '../pages/list/list';
 @Component({
   templateUrl: 'app.html'
 })
@@ -23,7 +24,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Badges', component: BadgesPage },
-      { title: 'Form', component: FormPage }
+      { title: 'Form', component: FormPage },
+      { title: 'List', component: ListPage }
     ];
   }
   openPage(page) {

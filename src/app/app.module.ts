@@ -8,12 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BadgesPage } from '../pages/badges/badges';
 import { FormPage } from '../pages/form/form';
+import { ListPage } from '../pages/list/list';
 @NgModule({
   declarations: [
     MyApp,
     BadgesPage,
     HomePage,
-    FormPage
+    FormPage,
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { FormPage } from '../pages/form/form';
     MyApp,
     BadgesPage,
     HomePage,
-    FormPage
+    FormPage,
+    ListPage
   ],
   providers: [
     StatusBar,
