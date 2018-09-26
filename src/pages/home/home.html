@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Action Sheets</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="action-sheets-basic-page">
+  <button ion-button block (click)="openMenu()">
+    Show Action Sheet
+  </button>
+  <button ion-button color="secondary" block (click)="doPrompt()">Show Prompt Alert</button>
+  <button ion-button color="danger" block (click)="doPromptCheckBox()">Show Alert Check</button>
+</ion-content>
