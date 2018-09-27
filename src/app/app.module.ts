@@ -17,6 +17,8 @@ import { SearchPage } from '../pages/searchbar/searchbar';
 import { SegmentPage } from '../pages/segment/segment';
 import { IconTextPage } from '../pages/tabs/tab';
 import { TabIconTextContentPage } from '../pages/tabs/tab';
+import { JsonDataProvider } from '../providers/json-data/json-data';
+import {HttpModule} from '@angular/http';
 @NgModule({
   declarations: [
     MyApp,
@@ -35,6 +37,7 @@ import { TabIconTextContentPage } from '../pages/tabs/tab';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -56,7 +59,8 @@ import { TabIconTextContentPage } from '../pages/tabs/tab';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    JsonDataProvider
   ]
 })
 export class AppModule {}

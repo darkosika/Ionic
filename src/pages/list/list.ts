@@ -1,31 +1,20 @@
 import { Component } from '@angular/core';
 import { LoadingController } from 'ionic-angular';
-
+import {JsonDataProvider} from '../../providers/json-data/json-data';
+import {Observable} from 'rxjs/Observable';
 @Component({
     templateUrl: 'list.html'
   })
   export class ListPage {
     isAndroid: boolean = false;
-    constructor(public loadingCtrl: LoadingController) { }
-    items = [
-        'Pokémon Yellow',
-        'Super Metroid',
-        'Mega Man X',
-        'The Legend of Zelda',
-        'Pac-Man',
-        'Super Mario World',
-        'Street Fighter II',
-        'Half Life',
-        'Final Fantasy VII',
-        'Star Fox',
-        'Tetris',
-        'Donkey Kong III',
-        'GoldenEye 007',
-        'Doom',
-        'Fallout',
-        'GTA',
-        'Halo'
-      ];
+    public items:any;
+    constructor(public loadingCtrl: LoadingController,public JsonData:JsonDataProvider) { }
+    arrayData:Observable<any>;
+    ionViewDidLoad(){
+     this.arrayData=this.JsonData.getRemoteData()
+     this.arrayData.subscribe(result=>{this.items=result})
+    }
+   
       itemSelected(item: string){
         const loader = this.loadingCtrl.create({
             content: "Please wait...",
