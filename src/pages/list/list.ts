@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { LoadingController } from 'ionic-angular';
+
 @Component({
     templateUrl: 'list.html'
   })
   export class ListPage {
+    isAndroid: boolean = false;
     constructor(public loadingCtrl: LoadingController) { }
     items = [
         'Pokémon Yellow',
@@ -33,3 +35,4 @@ import { LoadingController } from 'ionic-angular';
       }
      
   }
+ 

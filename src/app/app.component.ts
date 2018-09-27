@@ -9,6 +9,10 @@ import { FormPage } from '../pages/form/form';
 import { ListPage } from '../pages/list/list';
 import { ModalsPage } from '../pages/modals/modals';
 import { NavPage } from '../pages/navigation/navigation';
+import { SearchPage } from '../pages/searchbar/searchbar';
+import { SegmentPage } from '../pages/segment/segment';
+import { IconTextPage } from '../pages/tabs/tab';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -29,7 +33,10 @@ export class MyApp {
       { title: 'Form', component: FormPage },
       { title: 'List', component: ListPage },
       { title: 'Modals', component: ModalsPage },
-      { title: 'Navigation', component: NavPage }
+      { title: 'Navigation', component: NavPage },
+      { title: 'SearchBar', component: SearchPage },
+      { title: 'Segment', component: SegmentPage },
+      { title: 'Tab', component: IconTextPage}
     ];
   }
   openPage(page) {

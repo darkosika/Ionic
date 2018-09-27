@@ -13,6 +13,10 @@ import { ModalsPage } from '../pages/modals/modals';
 import { ModalContentPage } from '../pages/modals/modals';
 import { NavPage } from '../pages/navigation/navigation';
 import { NavigationDetailsPage } from '../pages/navigation/navigation';
+import { SearchPage } from '../pages/searchbar/searchbar';
+import { SegmentPage } from '../pages/segment/segment';
+import { IconTextPage } from '../pages/tabs/tab';
+import { TabIconTextContentPage } from '../pages/tabs/tab';
 @NgModule({
   declarations: [
     MyApp,
@@ -23,7 +27,11 @@ import { NavigationDetailsPage } from '../pages/navigation/navigation';
     ModalsPage,
     ModalContentPage,
     NavPage,
-    NavigationDetailsPage
+    NavigationDetailsPage,
+    SearchPage,
+    SegmentPage,
+    IconTextPage,
+    TabIconTextContentPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +47,11 @@ import { NavigationDetailsPage } from '../pages/navigation/navigation';
     ModalsPage,
     ModalContentPage,
     NavPage,
-    NavigationDetailsPage
+    NavigationDetailsPage,
+    SearchPage,
+    SegmentPage,
+    IconTextPage,
+    TabIconTextContentPage
   ],
   providers: [
     StatusBar,
