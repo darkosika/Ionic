@@ -8,6 +8,7 @@ import { BadgesPage } from '../pages/badges/badges';
 import { FormPage } from '../pages/form/form';
 import { ListPage } from '../pages/list/list';
 import { ModalsPage } from '../pages/modals/modals';
+import { NavPage } from '../pages/navigation/navigation';
 @Component({
   templateUrl: 'app.html'
 })
@@ -27,7 +28,8 @@ export class MyApp {
       { title: 'Badges', component: BadgesPage },
       { title: 'Form', component: FormPage },
       { title: 'List', component: ListPage },
-      { title: 'Modals', component: ModalsPage }
+      { title: 'Modals', component: ModalsPage },
+      { title: 'Navigation', component: NavPage }
     ];
   }
   openPage(page) {

@@ -11,6 +11,8 @@ import { FormPage } from '../pages/form/form';
 import { ListPage } from '../pages/list/list';
 import { ModalsPage } from '../pages/modals/modals';
 import { ModalContentPage } from '../pages/modals/modals';
+import { NavPage } from '../pages/navigation/navigation';
+import { NavigationDetailsPage } from '../pages/navigation/navigation';
 @NgModule({
   declarations: [
     MyApp,
@@ -19,7 +21,9 @@ import { ModalContentPage } from '../pages/modals/modals';
     FormPage,
     ListPage,
     ModalsPage,
-    ModalContentPage
+    ModalContentPage,
+    NavPage,
+    NavigationDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,9 @@ import { ModalContentPage } from '../pages/modals/modals';
     FormPage,
     ListPage,
     ModalsPage,
-    ModalContentPage
+    ModalContentPage,
+    NavPage,
+    NavigationDetailsPage
   ],
   providers: [
     StatusBar,
