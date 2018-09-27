@@ -9,13 +9,17 @@ import { HomePage } from '../pages/home/home';
 import { BadgesPage } from '../pages/badges/badges';
 import { FormPage } from '../pages/form/form';
 import { ListPage } from '../pages/list/list';
+import { ModalsPage } from '../pages/modals/modals';
+import { ModalContentPage } from '../pages/modals/modals';
 @NgModule({
   declarations: [
     MyApp,
     BadgesPage,
     HomePage,
     FormPage,
-    ListPage
+    ListPage,
+    ModalsPage,
+    ModalContentPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import { ListPage } from '../pages/list/list';
     BadgesPage,
     HomePage,
     FormPage,
-    ListPage
+    ListPage,
+    ModalsPage,
+    ModalContentPage
   ],
   providers: [
     StatusBar,

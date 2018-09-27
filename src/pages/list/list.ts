@@ -24,12 +24,12 @@ import { LoadingController } from 'ionic-angular';
         'GTA',
         'Halo'
       ];
-      itemSelected(item: string) {
+      itemSelected(item: string){
         const loader = this.loadingCtrl.create({
             content: "Please wait...",
             duration: 3000});
             loader.present();
-            ()=>{  console.log("Selected Item", item);}
+            console.log("Selected Item", item);
       }
-      
+     
   }
